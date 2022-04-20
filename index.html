@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/menustyle.css">
+    <link rel="stylesheet" href="./css/headerstyle.css">
+    <link rel="stylesheet" href="./css/footerstyle.css">
+    <script src="./js/graph.js" type="module"></script>
+    <title>Dashboard</title>
+</head>
+<body onclick="ClickTela()" onload="LoadGraphs()">
+    <header>
+        <div id="center-header">
+            <img src="./img/graph.png" alt="Icon Graph">
+            <h1>Dashboard</h1>
+        </div>
+        <div id="bottom-header">
+            <a id="1" onmouseenter="ButtonMouse(1)" onmouseout="ButtonMouseOff(1)" href="./index.html">Pagina Inicial</a>
+            <a id="2" onmouseenter="ButtonMouse(2)" onmouseout="ButtonMouseOff(2)" href="./pages/quemsomos.html">Quem Somos?</a>
+            <a id="3" onmouseenter="ButtonMouse(3)" onmouseout="ButtonMouseOff(3)" href="./pages/contato.html">Contato</a>
+        </div>
+    </header>
+    <div id="apresentation">
+        <h2>Crie e acesse gráficos aqui!</h2>
+        <input id="input-name"  type="text" placeholder="Insira o nome do gráfico que deseja criar" onmouseenter="InputClick()" onclick="InputClick()" onmouseout="InputOff()">
+        <button onclick="CreateNewGraph('input-name')">Criar</button>
+    </div>
+    <div id="content">
+        <h2>Bem vindo!</h2>
+        <p>
+            Seja bem vindo! Você pode usar este site para gerar gráficos e baixa-los. Utilizando um arquivo de Excel ou até mesmo inserindo os dados
+            manualmente é possivel criar gráficos de maneira intuitiva. Deseja entrar em <a href="">contato</a>? Clique e venha conversar
+            com a gente.
+        </p>
+        <li><strong>Figura 1:</strong> Gráfico de Cliques pela pagina.</li>
+        <div class="graph">
+            <canvas id="click-graph"></canvas>
+        </div>
+        <p>O gráfico a cima é gerado de forma dinamica. No seu navegador, toda a vez que você faz um clique é armazenado, fazendo com que ele seja 
+            exibido toda vez ao carregar a <a href="./index.html">Pagina Inicial</a>.
+        </p>
+        <p>Baixe nosso tamplete de Excel para usar no site!</p>
+        <button onclick="TamplateDownload()">Tamplate</button>
+    </div>
+    <footer>
+            <p>Dashboard - 2022</p>
+            <p><a href="mailto:marcosvmagalhaes123@gmail.com">marcosvmagalhaes123@gmail.com</a></p>
+            <p><a href="">+55 (19) 98305-1888</a></p>
+            <div class="copyleft">
+                <p class="copyleft-icon">©</p>
+                <p>Copyleft GNU GPL</p>
+            </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+</body>
+<script src="./js/menu.js"></script>
+<script src="./js/header.js"></script>
+</html>

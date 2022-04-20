@@ -1,0 +1,79 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+#adjust{
+    padding-top: 65px;
+}
+
+.content{
+    font-family: 'Roboto','Heebo',Arial,sans-serif;
+    margin: 20px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.content > h2{
+    margin-left: 20px;
+    color: rgba(0,0,0,0.87);
+    font-size: 26px;
+}
+
+.content > p{
+    margin-top: 12px;
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-bottom: 12px;
+    color: rgba(0,0,0,0.54);
+    font-size: 21px;
+    text-align: justify;
+}
+
+.content > button{
+    margin-left: 20px;
+    margin-bottom: 15px;
+    color: #fff;
+    border: 0;
+    padding: 8px;
+    background-color: #6099f6;
+}
+
+.content > #btCSV{
+    background-color: #6099f6;
+}
+
+.content > input{
+    padding: 6px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+.content > table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    background-color: rgb(51, 45, 45);
+    color: silver;
+    text-align: center;
+    border-collapse: collapse;
+    border-radius: 10px;
+    width: 70%;
+}
+
+.content >  tr, td, .removeBt{
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    border-radius: 5px;
+}
+
+.removeBt{
+    background-color: red;
+    border: 0;
+    padding-left: 30px;
+    padding-top: 10px;
+    border-radius: 10px;
+}

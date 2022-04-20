@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/headerstyle.css">
+    <link rel="stylesheet" href="../css/footerstyle.css">
+    <link rel="stylesheet" href="../css/quemstyle.css">
+    <title>Quem Somos?</title>
+</head>
+<body>
+    <div>
+        <header>
+            <div id="center-header">
+                <img src="../img/graph.png" alt="Icon Graph">
+                <h1>Dashboard</h1>
+            </div>
+            <div id="bottom-header">
+                <a id="1" onmouseenter="ButtonMouse(1)" onmouseout="ButtonMouseOff(1)" href="../index.html">Pagina Inicial</a>
+                <a id="2" onmouseenter="ButtonMouse(2)" onmouseout="ButtonMouseOff(2)" href="./quemsomos.html">Quem Somos?</a>
+                <a id="3" onmouseenter="ButtonMouse(3)" onmouseout="ButtonMouseOff(3)" href="./contato.html">Contato</a>
+            </div>
+        </header>
+        <div id="adjust">
+            <div class="content">
+                <h2>Gráfico Plotado</h2>
+                <div class="graph">
+                    <canvas id="build-graph"></canvas>
+                </div>
+                <button onclick="Baixar()">Baixar</button>
+                <button onclick="Voltar()">Voltar</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+            <p>Dashboard - 2022</p>
+            <p><a href="mailto:marcosvmagalhaes123@gmail.com">marcosvmagalhaes123@gmail.com</a></p>
+            <p><a href="">+55 (19) 98305-1888</a></p>
+            <div class="copyleft">
+                <p class="copyleft-icon">©</p>
+                <p>Copyleft GNU GPL</p>
+            </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+</body>
+<script src="../js/header.js"></script>
+<script src="../js/build.js"></script>
+</html>

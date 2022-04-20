@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/headerstyle.css">
+    <link rel="stylesheet" href="../css/footerstyle.css">
+    <link rel="stylesheet" href="../css/contatostyle.css">
+    <title>Contato</title>
+</head>
+<body onclick="ClickTela()">
+    <div>
+        <header>
+            <div id="center-header">
+                <img src="../img/graph.png" alt="Icon Graph">
+                <h1>Dashboard</h1>
+            </div>
+            <nav id="bottom-header">
+                <a id="1" onmouseenter="ButtonMouse(1)" onmouseout="ButtonMouseOff(1)" href="../index.html">Pagina Inicial</a>
+                <a id="2" onmouseenter="ButtonMouse(2)" onmouseout="ButtonMouseOff(2)" href="./quemsomos.html">Quem Somos?</a>
+                <a id="3" onmouseenter="ButtonMouse(3)" onmouseout="ButtonMouseOff(3)" href="./contato.html">Contato</a>
+            </nav>
+        </header>
+        <div id="adjust">
+            <div class="content">
+                <h2>Contato</h2>
+                <p>Olá, bem vindo! Sinta-se a vontade de entrar em contato por qualquer das opções a baixo. </p>
+            </div>
+            <div class="content">
+                <h2>Formulário de Contato</h2>
+                <form onsubmit="PegaLadrao(event)">
+                    <label class="conteiner-input">Nome: <input minlength="1" type="text"></label> 
+                    <label class="conteiner-input">Email: <input type="email"></label> 
+                    <label class="conteiner-input">Comentario: <input minlength="1" type="text"></label>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="content">
+                <h2>Opções de contato</h2>
+                <div id="contact-button">
+                    <a target="_blank" href="mailto:marcosvmagalhaes123@gmail.com"><img src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Mail-512.png" alt="email"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/marcos-magalh%C3%A3es-57a1651b4/"><img src="https://cdn.icon-icons.com/icons2/3041/PNG/512/linkedin_logo_icon_189225.png" alt="linkedin"></a>
+                    <a target="_blank" href="https://github.com/MarcosMaga/MarcosMaga"><img src="https://icon-library.com/images/github-icon-white/github-icon-white-16.jpg" alt="github"></a>
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=5519983051888&text=Ola!+Vi+seu+Dashboard!"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png" alt="whatsapp"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+            <p>Dashboard - 2022</p>
+            <p><a href="mailto:marcosvmagalhaes123@gmail.com">marcosvmagalhaes123@gmail.com</a></p>
+            <p><a href="">+55 (19) 98305-1888</a></p>
+            <div class="copyleft">
+                <p class="copyleft-icon">©</p>
+                <p>Copyleft GNU GPL</p>
+            </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+</body>
+<script src="../js/header.js"></script>
+<script src="../js/contato.js"></script>
+</html>
